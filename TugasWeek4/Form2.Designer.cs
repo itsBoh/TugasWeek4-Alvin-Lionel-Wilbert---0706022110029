@@ -38,7 +38,7 @@
             this.btnPrev = new System.Windows.Forms.Button();
             this.btnKembali = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // txtTelp
@@ -125,10 +125,10 @@
             this.btnNext.UseVisualStyleBackColor = true;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
-            // timer1
+            // timer
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.timer.Enabled = true;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // formTampilanData
             // 
@@ -162,6 +162,6 @@
         private Button btnPrev;
         private Button btnKembali;
         private Button btnNext;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer;
     }
 }

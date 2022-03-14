@@ -46,18 +46,19 @@ namespace TugasWeek4
         {
             this.Close();
         }
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            txtNama.Text = dataArray[nomorData, 0];
-            txtAlamat.Text = dataArray[nomorData, 1];
-            txtTelp.Text = dataArray[nomorData, 2];
-        }
 
         public void eror()
         {
             FormError formError = new FormError();
             formError.erorMsg = erorMsg;
             formError.ShowDialog();
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            txtNama.Text = dataArray[nomorData, 0];
+            txtAlamat.Text = dataArray[nomorData, 1];
+            txtTelp.Text = dataArray[nomorData, 2];
         }
     }
 }
